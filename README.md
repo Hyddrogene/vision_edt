@@ -1,7 +1,5 @@
 ## ViewCalendar
 
-ViewCalendar is a react application 
-
 ViewCalendar is a react application used to view events in a calendar from xml data. This application offers tools for coloring, filters, and statistics.
 
 This application was made with React, Node, javaScript, Css.
@@ -15,7 +13,7 @@ This app is still under development
 
 
 
-![Screenshot](VWscreenshot.png)
+[![VWScreenshot.png](https://i.postimg.cc/MZQZcYy9/VWScreenshot.png)](https://postimg.cc/hhKR6TZm)
 
 
 
