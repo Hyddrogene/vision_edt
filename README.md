@@ -8,7 +8,7 @@ it implements APIs like fullcalendar and chart.js
 ## Project Status
 This app is still under development
 
-## Project Screen Shot(s)
+## Project Screen Shot
 
 
 
@@ -42,5 +42,5 @@ To Visit App:
 ## Reflection 
  
 
-This was a 6 week long project built during my computer science license at University of Angers. Project goals included using technologies learned up until this point and familiarizing myself with react and documentation for new features.  
+This was a 6-8 week long project built during my computer science license at University of Angers. Project goals included using technologies learned up until this point and familiarizing myself with react and documentation for new features.  
  
