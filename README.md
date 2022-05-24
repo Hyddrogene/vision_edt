@@ -1,6 +1,6 @@
 ## ViewCalendar
 
-<a href="https://bessantoy.github.io/Calendar-viewer" > ViewCalendar </a> is a react application used to view events in a calendar from xml data. This application offers tools for coloring, filters, and statistics.
+<a href="https://bessantoy.github.io/Calendar-viewer" target="_blank" rel="noopener noreferrer"> ViewCalendar </a> is a react application used to view events in a calendar from xml data. This application offers tools for coloring, filters, and statistics.
 
 This application was made with React, Node, javaScript, Css.
 it implements APIs like fullcalendar and chart.js
