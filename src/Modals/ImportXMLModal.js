@@ -98,16 +98,6 @@ export default class ImportXMLModal extends React.Component {
     let enseignants = [];
     let event_id = 0;
 
-    /*//On souhaite recuperer tous les ensignants du fichier
-
-    let teachers = xml.querySelector("teachers"); // On regarde dans la deuxieme section : teachers
-    teachers.querySelectorAll("teacher").forEach((teacher) => {
-      tous_les_enseignants.push({
-        nom: teacher["attributes"]["id"].value,
-        departement: teacher["attributes"]["label"].value,
-      });
-    });*/
-
     //On souhaite creer des objets evenements compatibles à fullcalendar pour chaque session
     xml.querySelectorAll("session").forEach((session) => {
       // On commence à iterer sur les sessions de la partie solution
