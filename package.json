@@ -1,8 +1,8 @@
 {
+  "homepage": "https://bessantoy.github.io/Calendar-viewer",
   "name": "viewcalendar",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bessantoy.github.io/Calendar-viewer.git",
   "dependencies": {
     "@fullcalendar/daygrid": "^5.11.0",
     "@fullcalendar/interaction": "^5.11.0",
