@@ -73,6 +73,10 @@ export default function GroupesStats(props) {
   return (
     <div id="groupes_stats">
       <h1 className="stats_title">Groupes</h1>
+      <GroupesStatsGlobal VH_J_groupes={VH_J_groupes} groupes={groupes} />
+
+      <GroupesStatsHebdomadaire groupes={groupes} VH_J_groupes={VH_J_groupes} />
+
       <GroupesStatsJournalier
         currentEvents={props.currentEvents}
         calendarRef={props.calendarRef}
@@ -81,9 +85,7 @@ export default function GroupesStats(props) {
         horaires_par_jours={horaires_par_jours}
       />
 
-      <GroupesStatsHebdomadaire groupes={groupes} VH_J_groupes={VH_J_groupes} />
 
-      <GroupesStatsGlobal VH_J_groupes={VH_J_groupes} groupes={groupes} />
     </div>
   );
 }
