@@ -7,28 +7,38 @@ import ImportXMLModal from "./Modals/ImportXMLModal";
 import StatisticsModal from "./Modals/Stats/StatisticsModal";
 
 export default class Calendar extends React.Component {
-  calendarRef = React.createRef();
 
-  listOfBgColors = [
-    "#FF5DE4",
-    "#80E961",
-    "#FFE25C",
-    "#00B3FF",
-    "#FFA87F",
-    "#5603BD",
-    "#FF5F5F",
-    "#808000",
-    "#5f9ea0",
-    "#dc143c",
-    "#bdb76b",
-    "#e9967a",
-    "#e6e6fa",
-    "#3cb371",
-    "#f4a460",
-    "#008080",
-    "#f5deb3",
-    "#9acd32",
-  ];
+  constructor(props){
+    super(props);
+
+    this.calendarRef = React.createRef();
+    this.filterRef = React.createRef();
+    this.listOfBgColors = [
+      "#FF5DE4",
+      "#80E961",
+      "#FFE25C",
+      "#00B3FF",
+      "#FFA87F",
+      "#5603BD",
+      "#FF5F5F",
+      "#808000",
+      "#5f9ea0",
+      "#dc143c",
+      "#bdb76b",
+      "#e9967a",
+      "#e6e6fa",
+      "#3cb371",
+      "#f4a460",
+      "#008080",
+      "#f5deb3",
+      "#9acd32",
+    ];
+  
+  }
+
+  componentDidUpdate(){
+    this.filterRef.current.filtrate();
+  }
 
   state = {
     defaultview: true,
@@ -51,6 +61,7 @@ export default class Calendar extends React.Component {
           salles={this.state.salles}
           enseignants={this.state.enseignants}
           calendarRef={this.calendarRef}
+          ref={this.filterRef}
         />
         <DefaultView
           currentEvents={this.state.currentEvents}

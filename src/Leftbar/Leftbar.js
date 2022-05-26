@@ -1,11 +1,6 @@
 import React from "react";
 import Filters from "./Filters";
 export default class Leftbar extends React.Component {
-  componentDidUpdate() {
-    if (this.props.calendarApi !== undefined) {
-      this.filtrate();
-    }
-  }
 
   render() {
     return (
