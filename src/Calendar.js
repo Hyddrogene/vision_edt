@@ -7,8 +7,7 @@ import ImportXMLModal from "./Modals/ImportXMLModal";
 import StatisticsModal from "./Modals/Stats/StatisticsModal";
 
 export default class Calendar extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.calendarRef = React.createRef();
@@ -33,10 +32,9 @@ export default class Calendar extends React.Component {
       "#f5deb3",
       "#9acd32",
     ];
-  
   }
 
-  componentDidUpdate(){
+  componentDidUpdate() {
     this.filterRef.current.filtrate();
   }
 
