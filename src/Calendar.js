@@ -137,7 +137,7 @@ export default class Calendar extends React.Component {
         all_filters.forEach((filter) => {
           filter.checked = false;
         });
-
+        
         let active_filters = document.querySelector(
           "ul[class='active-filters']"
         );
