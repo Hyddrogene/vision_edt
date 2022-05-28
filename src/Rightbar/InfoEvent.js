@@ -42,7 +42,7 @@ export default class infoEvent extends React.Component {
             <p>Catégorie : {this.props.clickedEvent.extendedProps.categorie}</p>
             <p>Salle : {this.props.clickedEvent.extendedProps.salle}</p>
             <p>Matière : {this.props.clickedEvent.extendedProps.matiere}</p>
-            <p>Groupe(s) : {this.props.clickedEvent.extendedProps.groupes}</p>
+            <p>Groupe(s) : {this.props.clickedEvent.extendedProps.groupes.map(grp => " " + grp)}</p>
             <p>
               Enseignant : {this.props.clickedEvent.extendedProps.enseignant}
             </p>
