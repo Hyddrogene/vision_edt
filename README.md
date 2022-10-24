@@ -6,7 +6,7 @@ This application was made with React, Node, javaScript, Css.
 it implements APIs like fullcalendar and chart.js
 
 ## Project Status
-This app is still under development
+This app is deployed
 
 ## Project Screen Shot
 
