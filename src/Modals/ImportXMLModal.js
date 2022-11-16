@@ -116,8 +116,9 @@ export default class ImportXMLModal extends React.Component {
       //On cherche maintenant dans la partie courses (en dehors de la partie solution)
 
       let courses = xml.querySelector("courses");
+      let classes_p =  courses.querySelector('[id="' + session_class + '"]').parentNode;
       let _class = courses.querySelector('[id="' + session_class + '"]'); //On recupere la balise class dont l'id est egal à l'attribut class de la balise session
-      let capacite_accueil = _class["attributes"]["maxHeadCount"].value; //On recupere la capacité d'accueil du cours
+      let capacite_accueil = classes_p["attributes"]["maxHeadCount"].value; //_class["attributes"]["maxHeadCount"].value; //On recupere la capacité d'accueil du cours
       let part = _class.parentNode.parentNode; //On recupere la balise parent de la balise classes elle meme parent de la la balise class
 
       let categorie = part["attributes"]["label"].value; // On recupere la categorie
